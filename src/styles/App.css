@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply a specific font size for elements with class .fs-7 */
+.fs-7 {
+  font-size: 14px;
+}
+
+/* Hide clear button for input[type="search"] in Microsoft Edge */
+input[type="search"]::-ms-clear,
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Hide search decoration and cancel button in WebKit browsers */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* Apply specific styles to input elements with class .header-searchbar */
+.header-searchbar {
+  border: 0px;
+  outline: 0px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Styles for elements with class .computer (e.g., background image) */
+.computer {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Overlay styles for elements with class .computer image */
+.computer-overlay {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 100% !important;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Styles for content within elements with class .computer-content */
+.computer-content {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  color: #fff;
+  z-index: 1;
+}
+
+/* Remove outline for elements with class .form-inputs */
+.form-inputs {
+  outline: 0px;
+}
+
+/* Styles for modal headers */
+.modal-header {
+  background-color: #effff4;
+  color: #008a45;
+}
+
+/* Media query for screens up to 1366px width */
+@media (max-width: 1366px) {
+  .w-lg-100 {
+    width: 100% !important;
+  }
+}
+
+/* Media query for screens up to 768px width */
+@media (max-width: 768px) {
+  .w-md-50 {
+    width: 50% !important;
+  }
+
+  /* Adjustments for smaller screens */
+  .computer-content {
+    top: 40%;
+    left: 10%;
+  }
+}
